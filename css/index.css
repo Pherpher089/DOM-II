@@ -361,28 +361,31 @@ img {
   text-align: center;
   align-content: center;
 }
-/*
-  width: 200px;
-  height: 45px;
-  */
 @keyframes buttonResize {
-  from {
+  0% {
     height: 45px;
     width: 200px;
   }
-  to {
+  50% {
     height: 55px;
     width: 220px;
+  }
+  100% {
+    height: 45px;
+    width: 200px;
   }
 }
 .animateButtonSize {
   animation-name: buttonResize;
-  animation-duration: .5s;
-  
+  animation-duration: 0.5s;
+  animation-iteration-count: infinite;
 }
-
+.animateButtonEnd {
+  height: 55xp;
+  width: 220px;
+}
 .animateButtonSizeREverse {
   animation-name: buttonResize;
   animation-direction: reverse;
-  animation-duration: .5s;
+  animation-duration: 0.5s;
 }
