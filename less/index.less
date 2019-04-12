@@ -13,3 +13,31 @@
 // Page Specific
 @import 'home-page.less';
 
+.bigButton{
+   background-color: black;
+    //height: height + (height / 2);
+}
+
+.bigText {
+    color: white;
+    background-color: grey;
+    height: 50px;
+    font-size: 40px;
+    text-align: center;
+    align-content: center;
+  }
+  
+  /*
+  width: 200px;
+  height: 45px;
+  */
+  
+  @keyframes buttonResize{
+    from {height: 45px}
+    to {height: 55px};
+  }
+
+  .animateButtonSize{
+    animation-name: buttonResize;
+    animation-duration: 2s;
+  }

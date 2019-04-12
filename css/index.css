@@ -350,3 +350,39 @@ img {
   background: #FFFFFF;
   color: #17A2B8;
 }
+.bigButton {
+  background-color: black;
+}
+.bigText {
+  color: white;
+  background-color: grey;
+  height: 50px;
+  font-size: 40px;
+  text-align: center;
+  align-content: center;
+}
+/*
+  width: 200px;
+  height: 45px;
+  */
+@keyframes buttonResize {
+  from {
+    height: 45px;
+    width: 200px;
+  }
+  to {
+    height: 55px;
+    width: 220px;
+  }
+}
+.animateButtonSize {
+  animation-name: buttonResize;
+  animation-duration: .5s;
+  
+}
+
+.animateButtonSizeREverse {
+  animation-name: buttonResize;
+  animation-direction: reverse;
+  animation-duration: .5s;
+}
