@@ -350,3 +350,42 @@ img {
   background: #FFFFFF;
   color: #17A2B8;
 }
+.bigButton {
+  background-color: black;
+}
+.bigText {
+  color: white;
+  background-color: grey;
+  height: 50px;
+  font-size: 40px;
+  text-align: center;
+  align-content: center;
+}
+@keyframes buttonResize {
+  0% {
+    height: 45px;
+    width: 200px;
+  }
+  50% {
+    height: 55px;
+    width: 220px;
+  }
+  100% {
+    height: 45px;
+    width: 200px;
+  }
+}
+.animateButtonSize {
+  animation-name: buttonResize;
+  animation-duration: 0.5s;
+  animation-iteration-count: infinite;
+}
+.animateButtonEnd {
+  height: 55xp;
+  width: 220px;
+}
+.animateButtonSizeREverse {
+  animation-name: buttonResize;
+  animation-direction: reverse;
+  animation-duration: 0.5s;
+}
